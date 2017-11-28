@@ -11,12 +11,30 @@ public class Test {
         stock.addObserver(trace);
 
         stock.setPrice(9.9f);
+        try {
+            Thread.sleep(1000);
+        } catch( InterruptedException e) {
+            System.out.println("Sleep interrupeted" );
+        }
         stock.setPrice(2.9f);
+        try {
+            Thread.sleep(1000);
+        } catch( InterruptedException e) {
+            System.out.println("Sleep interrupeted" );
+        }
         stock.setPrice(2.9f);
+        try {
+            Thread.sleep(1000);
+        } catch( InterruptedException e) {
+            System.out.println("Sleep interrupeted" );
+        }
         stock.setPrice(3.9f);
+        try {
+            Thread.sleep(1000);
+        } catch( InterruptedException e) {
+            System.out.println("Sleep interrupeted" );
+        }
         stock.setPrice(34.9f);
-
-
     }
 
 }
