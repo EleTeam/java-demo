@@ -1,4 +1,4 @@
-package com.et.javademo;
+package com.et.javademo.helloworld;
 
 public interface Human {
 

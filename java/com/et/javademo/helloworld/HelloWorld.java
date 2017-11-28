@@ -1,6 +1,6 @@
-package com.et.javademo;
+package com.et.javademo.helloworld;
 
-import com.et.javademo.impl.HumanImpl;
+import com.et.javademo.helloworld.impl.HumanImpl;
 
 public class HelloWorld {
 
