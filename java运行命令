@@ -1,0 +1,33 @@
+//idea编译器运行
+/data/jdk1.8.0/bin/java
+    -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:41579,suspend=y,server=n
+    -Dfile.encoding=UTF-8
+    -classpath /data/jdk1.8.0/jre/lib/charsets.jar
+                :/data/jdk1.8.0/jre/lib/deploy.jar
+                :/data/jdk1.8.0/jre/lib/ext/cldrdata.jar
+                :/data/jdk1.8.0/jre/lib/ext/dnsns.jar
+                :/data/jdk1.8.0/jre/lib/ext/jaccess.jar
+                :/data/jdk1.8.0/jre/lib/ext/jfxrt.jar
+                :/data/jdk1.8.0/jre/lib/ext/localedata.jar
+                :/data/jdk1.8.0/jre/lib/ext/nashorn.jar
+                :/data/jdk1.8.0/jre/lib/ext/sunec.jar
+                :/data/jdk1.8.0/jre/lib/ext/sunjce_provider.jar
+                :/data/jdk1.8.0/jre/lib/ext/sunpkcs11.jar
+                :/data/jdk1.8.0/jre/lib/ext/zipfs.jar
+                :/data/jdk1.8.0/jre/lib/javaws.jar
+                :/data/jdk1.8.0/jre/lib/jce.jar
+                :/data/jdk1.8.0/jre/lib/jfr.jar
+                :/data/jdk1.8.0/jre/lib/jfxswt.jar
+                :/data/jdk1.8.0/jre/lib/jsse.jar
+                :/data/jdk1.8.0/jre/lib/management-agent.jar
+                :/data/jdk1.8.0/jre/lib/plugin.jar
+                :/data/jdk1.8.0/jre/lib/resources.jar
+                :/data/jdk1.8.0/jre/lib/rt.jar
+                :/home/tony/Develop/IdeaWorkspace/java-demo/output/production/java-demo
+                :/home/tony/Develop/IdeaWorkspace/java-demo/java/lib/opendmk_jdmkrt_jar-1.0-b01-ea.jar
+                :/home/tony/IdeaIDE/lib/idea_rt.jar
+    com.et.javademo.helloworld.HelloWorld
+
+//终端运行
+java -classpath /home/tony/Develop/IdeaWorkspace/java-demo/output/production/java-demo
+    com.et.javademo.helloworld.HelloWorld
