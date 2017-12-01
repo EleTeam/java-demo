@@ -10,8 +10,8 @@ public class Web {
             int itemId = 100;
 
             for(int i=0; i<10000; i++) {
-                URL url = new URL("http://www.cjwsc.com/item/" + itemId + ".html");
-//                URL url = new URL("http://www.cjwsc.com/item/148707.html");
+                //URL url = new URL("http://www.cjwsc.com/item/" + itemId + ".html");
+                URL url = new URL("http://www.cjwsc.com/item/150499.html");
 
                 long startTime1 = System.currentTimeMillis();
 
@@ -27,6 +27,7 @@ public class Web {
                 System.out.println("useTime1: " + useTime1);
 
                 itemId = itemId + i;
+                Thread.sleep(2000);
             }
 
 //            long startTime2 = System.currentTimeMillis();
@@ -45,6 +46,8 @@ public class Web {
 //            streamReader.close();
 //            bufferedReader.close();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

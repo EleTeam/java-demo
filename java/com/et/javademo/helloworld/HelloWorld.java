@@ -9,6 +9,13 @@ public class HelloWorld {
 
         Human human = new HumanImpl();
         System.out.println(human.eat());
+        System.out.println(System.getProperty("user.dir"));
+        try {
+            Class<?> clazz = Class.forName("com.et.javademo.helloworld.HelloWorld");
+            System.out.println("");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
 }
