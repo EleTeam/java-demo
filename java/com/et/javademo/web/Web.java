@@ -9,9 +9,11 @@ public class Web {
         try {
             int itemId = 100;
 
-            for(int i=0; i<10000; i++) {
+            for(int i=0; i<1000000; i++) {
                 //URL url = new URL("http://www.cjwsc.com/item/" + itemId + ".html");
-                URL url = new URL("http://www.cjwsc.com/item/150499.html");
+//                URL url = new URL("http://www.cjwsc.com/item/150499.html");
+                URL url = new URL("http://www.cjwsc.com/captcha?id=yutu879875f1b7a54&rand=0.5648780087");
+
 
                 long startTime1 = System.currentTimeMillis();
 
